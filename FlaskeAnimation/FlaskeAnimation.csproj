@@ -96,7 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Properties\Red Portal.png" />
+    <Resource Include="Red_Portal.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Energy.png" />

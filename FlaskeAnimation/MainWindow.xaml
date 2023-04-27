@@ -8,13 +8,20 @@
         ContentRendered="Window_ContentRendered"
         Title="FlaskeAutomat" Height="450" Width="800">
     <Window.Resources>
-        <Storyboard x:Key="ImageAnimation">
-            <DoubleAnimation From="100" To="400" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)" />
-
+        <Storyboard x:Key="Produce">
+            <DoubleAnimation From="100" To="400" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
+        </Storyboard>
+        <Storyboard x:Key="SplitBeer">
+            <DoubleAnimation From="400" To="600" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
+            <DoubleAnimation From="150" To="0" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Top)"/>
+        </Storyboard>
+        <Storyboard x:Key="SplitEnergy">
+            <DoubleAnimation From="400" To="600" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
+            <DoubleAnimation From="150" To="300" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Top)"/>
         </Storyboard>
     </Window.Resources>
     <Canvas x:Name="Woop">
-        <Image Source="H:\Programming\H2\Threads\FlaskeAnimation\FlaskeAnimation\Properties\Red Portal.png" Stretch="Fill" Canvas.Left="90" Canvas.Top="150" Height="100" Width="50"/>
+        <Image Source="Red_Portal.png" Stretch="Fill" Canvas.Left="90" Canvas.Top="150" Height="100" Width="50"/>
         <Image Height="100" Canvas.Left="400" Source="/Splitter.png" Stretch="Fill" Canvas.Top="150" Width="112"/>
 
 
