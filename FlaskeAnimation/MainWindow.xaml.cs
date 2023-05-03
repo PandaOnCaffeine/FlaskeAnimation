@@ -36,7 +36,7 @@ namespace FlaskeAnimation
         }
         public void Spawn(String path)
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
             Dispatcher.Invoke(() =>
             {
                 Image myImage = new Image();
@@ -54,7 +54,7 @@ namespace FlaskeAnimation
         }
         public void Split(string path)
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
             Dispatcher.Invoke(() =>
             {
                 Image myImage = new Image();
@@ -119,7 +119,7 @@ namespace FlaskeAnimation
                 while (true)
                 {
                     //100 millisec delay
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
 
                     //Locks buffer array
                     lock (buffer)
@@ -165,7 +165,7 @@ namespace FlaskeAnimation
                             for (int i = 0; i < bufferIndex; i++)
                             {
                                 //100 millisec delay
-                                Thread.Sleep(2000);
+                                Thread.Sleep(1000);
 
                                 //if object is a beer
                                 if (buffer[i].Name == "Beer")
@@ -233,7 +233,7 @@ namespace FlaskeAnimation
                             //for loop, loops through beers array and consumes all the beers 
                             for (int i = 0; i < beersIndex; i++)
                             {
-                                Thread.Sleep(2000);
+                                Thread.Sleep(1000);
                                 Console.WriteLine($"[{Thread.CurrentThread.Name}]| Beer has been consumt", Console.ForegroundColor = ConsoleColor.DarkBlue);
                                 beers[i] = null;
                             }

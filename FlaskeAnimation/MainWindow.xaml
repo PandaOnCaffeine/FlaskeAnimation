@@ -9,15 +9,15 @@
         Title="FlaskeAutomat" Height="450" Width="800">
     <Window.Resources>
         <Storyboard x:Key="Produce">
-            <DoubleAnimation From="100" To="400" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
+            <DoubleAnimation From="100" To="400" Duration="0:0:1" Storyboard.TargetProperty="(Canvas.Left)"/>
         </Storyboard>
         <Storyboard x:Key="SplitBeer">
-            <DoubleAnimation From="400" To="600" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
-            <DoubleAnimation From="150" To="0" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Top)"/>
+            <DoubleAnimation From="400" To="600" Duration="0:0:1" Storyboard.TargetProperty="(Canvas.Left)"/>
+            <DoubleAnimation From="150" To="0" Duration="0:0:1" Storyboard.TargetProperty="(Canvas.Top)"/>
         </Storyboard>
         <Storyboard x:Key="SplitEnergy">
-            <DoubleAnimation From="400" To="600" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Left)"/>
-            <DoubleAnimation From="150" To="300" Duration="0:0:2" Storyboard.TargetProperty="(Canvas.Top)"/>
+            <DoubleAnimation From="400" To="600" Duration="0:0:1" Storyboard.TargetProperty="(Canvas.Left)"/>
+            <DoubleAnimation From="150" To="300" Duration="0:0:1" Storyboard.TargetProperty="(Canvas.Top)"/>
         </Storyboard>
     </Window.Resources>
     <Canvas x:Name="Woop">
